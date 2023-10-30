@@ -5,5 +5,5 @@ There is a new tool called GitHub HTML Preview, which does exactly what you want
 
 Note: This tool is actually a github.io page and is not affiliated with github as a company.
 Example: 
-http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/main/Quiz_SANA2015_1.html
+http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/main/Quiz_SANA2015_2.html
 
