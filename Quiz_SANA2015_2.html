@@ -87,6 +87,7 @@
             <h4>Questionnaire SANA 2015</h4>
         </div>
         <p>Préparation à l'examen SANA basé sur les 150 questions officielles.</p>
+	<p id="debug">debug text</p>
         <h4>Score global : <span id="ScoreGlobal"</span></h4>
         <h5 id="QuestionTitre">Question</h5>
         <p id="QuestionTexte">Texte de la question</p>
@@ -127,6 +128,7 @@
     	*/
 
       // Codex Generation
+      var debug = document.getElementById("debug");
       var Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       var Codex = "";
       var NbrQuestions = 100;
@@ -135,7 +137,8 @@
         let LetterIdx = i % Alphabet.length;   // With modulo 26, LetterIdx goes from 0 to 25
         Codex += Alphabet.CharAt(LetterIdx);   // Codex: "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPRQ....."
       };
-
+      debug.textContent = Codex;
+/*
       // Response Original (this block must be deleted for production)
       var ResponseOriginal = "ABCCBAACBCABBABCBAABBAAACCABBAACCABBAACCABBCABAACA";
 
@@ -159,7 +162,7 @@
 
       };
       
-    
+*/    
     
          var ScoreGlobalCompteur = 0;
     	// Variables for the Buttons
