@@ -9,3 +9,9 @@ http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/m
 
 http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/main/Quiz_SANA2015_1.html
 
+Development CDN GitHack:
+https://raw.githack.com/henripeterson68/SANA2015/main/Quiz_SANA2015_2.html
+
+Production GitHack:
+
+https://rawcdn.githack.com/henripeterson68/SANA2015/2cb6f8966fefe62089e052b83dc2f5c9ac6e91a6/Quiz_SANA2015_2.html?min=1
