@@ -138,7 +138,7 @@
         LetterIdx = i % Alphabet.length;   // With modulo 26, LetterIdx goes from 0 to 25
         Codex = Codex + Alphabet.charAt(LetterIdx);   // Codex: "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPRQ"
       };
-      debug.textContent = Codex;	    
+      debug.textContent = "Codex: " + Codex;	    
 
       // Response Original (this block must be deleted for production)
       var ResponseOriginal = "ABCCBAACBCABBABCBAABBAAACCABBAACCABBAACCABBCABAACA";
@@ -149,14 +149,17 @@
       var QuestionIdx = 0;
       var ResponseLetter = "";
       var CodeIdx = 0;
+      var CodeIdxString = CodeIdx.toString();
 
       for (let i = 0; i < ResponseOriginal.length; i++){
-        ResponseLetter = ResponseOriginal.charAt(i); // A
+        ResponseLetter = ResponseOriginal.charAt(i); // A, B, C, C, ...
         CodexIdx = i * 3;  // CodeIdx: 0,3,6,9,12,15
+	CodeIdxString = CodeIdxString + CodeIdx.toString();
         ResponseCode = ResponseCode + Codex.charAt(CodeIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
       };
 
-      debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
+      //debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
+      debug.textContent = "CodeIdxString: " + CodeIdxString;
 /*
       // ----- Code for Production begin here ----------------------
       var ResponseSecure = "AEIKORUX";
