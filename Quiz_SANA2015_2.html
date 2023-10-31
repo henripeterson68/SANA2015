@@ -132,15 +132,14 @@
       var Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       var Codex = "";
       var NbrQuestions = 100;
-      //var LetterIdx = 0;
 	    
       for(let i = 0; i < NbrQuestions; i++){
         let LetterIdx = i % Alphabet.length;   // With modulo 26, LetterIdx goes from 0 to 25
         Codex = Codex + Alphabet.charAt(LetterIdx);   // Codex: "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPRQ"
       };
-      debug.textContent = Codex;
+      //debug.textContent = Codex;
 	    
-/*
+
       // Response Original (this block must be deleted for production)
       var ResponseOriginal = "ABCCBAACBCABBABCBAABBAAACCABBAACCABBAACCABBCABAACA";
 
@@ -148,13 +147,13 @@
       var ResponseIdx = {A:0,B:1,C:2};
       var ResponseCode = "";
       var QuestionIdx = 0;
-      for (ResponseLetter of ResponseOriginal){
+      for (const ResponseLetter of ResponseOriginal){
         let CodexIdx = QuestionIdx * 3;  // CodeIdx: 0,3,6,9,12,15
-        ResponseCode += Codex.charAt(CodeIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
+        ResponseCode = ResponseCode + Codex.charAt(CodeIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
         QuestionIdx += 1; // Increment Question Index to get the next question
       };
-      console.log("ResponseCode: " + ResponseCode); // Copy console log string and paste to variable ResponseSecure
-
+      debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
+/*
       // ----- Code for Production begin here ----------------------
       var ResponseSecure = "AEIKORUX";
 
