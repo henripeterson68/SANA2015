@@ -147,11 +147,13 @@
       var ResponseIdx = {A:0,B:1,C:2};
       var ResponseCode = "";
       var QuestionIdx = 0;
+/*
       for (let ResponseLetter of ResponseOriginal){
         let CodexIdx = QuestionIdx * 3;  // CodeIdx: 0,3,6,9,12,15
         ResponseCode = ResponseCode + Codex.charAt(CodeIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
         QuestionIdx += 1; // Increment Question Index to get the next question
       };
+*/
       debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
 /*
       // ----- Code for Production begin here ----------------------
