@@ -148,18 +148,15 @@
       var ResponseCode = "";
       var QuestionIdx = 0;
       var ResponseLetter = "";
-      var CodeIdx = 0;
-      var CodeIdxString = CodeIdx.toString();
+      var CodexIdx = 0;
 
       for (let i = 0; i < ResponseOriginal.length; i++){
         ResponseLetter = ResponseOriginal.charAt(i); // A, B, C, C, ...
-        CodexIdx = i * 3;  // CodeIdx: 0,3,6,9,12,15
-	CodeIdxString = CodeIdxString + CodeIdx.toString();
-        ResponseCode = ResponseCode + Codex.charAt(CodeIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
+        CodexIdx = i * 3;  // CodexIdx: 0,3,6,9,12,15
+        ResponseCode = ResponseCode + Codex.charAt(CodexIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
       };
 
-      //debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
-      debug.textContent = "CodeIdxString: " + CodeIdxString;
+      debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
 /*
       // ----- Code for Production begin here ----------------------
       var ResponseSecure = "AEIKORUX";
