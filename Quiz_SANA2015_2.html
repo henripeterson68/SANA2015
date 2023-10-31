@@ -159,12 +159,18 @@
       debug.textContent = "ResponseCode: " + ResponseCode; // Copy console log string and paste to variable ResponseSecure
 
       // ----- Code for Production begin here ----------------------
-      var ResponseSecure = "AEIKORUX"; // Copy ResponseCode from KeyGen.html
+      var ResponseSecure = "AEILNPSXZDEILNRVXZCGJLORWZAEHJMRUV"; // Copy ResponseCode from KeyGen.html
 
       // Generate Response Object
       var ResponseBlockProto = {};
-      for (let ResponseLetter of ResponseSecure){
-
+      for (let i = 0; i < ResponseSecure.length; i++){
+        ResponseCodeProto = ResponseSecure.charAt(i);
+	CodexIdxProto = i * 3; // 0,3,6,9,12
+	ResponseCodeArrayProto.push(Codex.charAt(CodexIdxProto));     // Codex at pos 0,3,6,9,12
+	ResponseCodeArrayProto.push(Codex.charAt(CodexIdxProto + 1)); // Codex at pos 1,4,7,10,13
+        ResponseCodeArrayProto.push(Codex.charAt(CodexIdxProto + 2)); // Codex at pos 2,5,8,11,14
+	ResponseStringProto = "Bouton" + ResponseArrayProto[ResponseCodeArrayProto.indexOf(ResponseCodeProto)]; //BoutonA or BoutonB or BoutonC
+	QuestionStringProto = "Q" + 
       };
       
 */    
