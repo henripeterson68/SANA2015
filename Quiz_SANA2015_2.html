@@ -163,6 +163,12 @@
 
       // Generate Response Object
       var ResponseBlockProto = {};
+      var ResponseCodeProto = "";
+      var CodexIdxProto = 0;
+      var ResponseCodeArrayProto = [];
+      var ResponseStringProto = "";
+      var QuestionStringProto = "";
+      var ResponseArrayProto = ["A","B","C"];
       for (let i = 0; i < ResponseSecure.length; i++){
         ResponseCodeProto = ResponseSecure.charAt(i);
 	CodexIdxProto = i * 3; // 0,3,6,9,12
@@ -170,9 +176,10 @@
 	ResponseCodeArrayProto.push(Codex.charAt(CodexIdxProto + 1)); // Codex at pos 1,4,7,10,13
         ResponseCodeArrayProto.push(Codex.charAt(CodexIdxProto + 2)); // Codex at pos 2,5,8,11,14
 	ResponseStringProto = "Bouton" + ResponseArrayProto[ResponseCodeArrayProto.indexOf(ResponseCodeProto)]; //BoutonA or BoutonB or BoutonC
-	QuestionStringProto = "Q" + 
-      };
-      
+	QuestionStringProto = "Q" + (i+1).toString().padStart(3, '0'); // Q001, Q002, Q003
+	ResponseBlockProto[QuestionStringProto] = ResponseStringProto;
+      }; // End for loop ResponseSecure
+      debug.textContent = JSON.stringify(ResponseBlockProto);
 */    
     
          var ScoreGlobalCompteur = 0;
