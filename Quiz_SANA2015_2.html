@@ -132,10 +132,10 @@
       var Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       var Codex = "";
       var NbrQuestions = 100;
-      var LetterIdx = 0;
+      //var LetterIdx = 0;
 	    
       for(let i = 0; i < NbrQuestions; i++){
-        LetterIdx = i % Alphabet.length;   // With modulo 26, LetterIdx goes from 0 to 25
+        let LetterIdx = i % Alphabet.length;   // With modulo 26, LetterIdx goes from 0 to 25
         Codex = Codex + Alphabet.charAt(LetterIdx);   // Codex: "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPRQ"
       };
       debug.textContent = Codex;
