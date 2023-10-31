@@ -7,3 +7,5 @@ Note: This tool is actually a github.io page and is not affiliated with github a
 Example: 
 http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/main/Quiz_SANA2015_2.html
 
+http://htmlpreview.github.io/?https://github.com/henripeterson68/SANA2015/blob/main/Quiz_SANA2015_1.html
+
