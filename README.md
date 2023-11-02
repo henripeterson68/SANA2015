@@ -37,4 +37,6 @@ If you don’t add the latest tag, JSDelivr will cache your file and always deli
 Forgetting to add the latest tag to your url, JSDelivr will update to a new version after some time. After committing a new version it may take some time until JSDelivr updates its caches.
 
 https://github.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
+
 https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015@V1.0.0.0/Quiz_SANA2015_3.html
+
