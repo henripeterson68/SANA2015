@@ -19,5 +19,7 @@ https://rawcdn.githack.com/henripeterson68/SANA2015/2cb6f8966fefe62089e052b83dc2
 CDN GitHack:
 https://rawcdn.githack.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html?min=1
 
-CDN Jbl:
+CDN cdn.jsdelivr.net:
 
+https://github.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
+https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
