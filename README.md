@@ -38,5 +38,5 @@ Forgetting to add the latest tag to your url, JSDelivr will update to a new vers
 
 https://github.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
 
-https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015@V1.0.0.0/Quiz_SANA2015_3.html?content-type=text/html
+https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015@V1.0.0.0/Quiz_SANA2015_3.html?content-type=application/javascript
 
