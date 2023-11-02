@@ -20,6 +20,21 @@ CDN GitHack:
 https://rawcdn.githack.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html?min=1
 
 CDN cdn.jsdelivr.net:
+JSDelivr has a nice integration with GitHub. The following raw GitHub url
+
+https://raw.githubusercontent.com/usystems/webling-plugins/main/examples/member-map/index.js
+
+can be accessed through the JSDelivr by
+
+https://cdn.jsdelivr.net/gh/usystems/webling-plugins@latest/examples/member-map/index.js
+
+How does it work
+Replace http://raw.githubusercontent.com/ with https://cdn.jsdelivr.net/gh/. Make sure you don’t forget the /gh/ segment.
+Remove «main» from the url, because JSDelivr always takes the file from the main branch.
+Add a GitHub tag after the repository. Either a tag from GitHub like 1.0.0 or latest for the latest version of this file.
+If you don’t add the latest tag, JSDelivr will cache your file and always deliver the same file.
+
+Forgetting to add the latest tag to your url, JSDelivr will update to a new version after some time. After committing a new version it may take some time until JSDelivr updates its caches.
 
 https://github.com/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
-https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015/V1.0.0.0/Quiz_SANA2015_3.html
+https://cdn.jsdelivr.net/gh/henripeterson68/SANA2015@V1.0.0.0/Quiz_SANA2015_3.html
