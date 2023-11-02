@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Paragraph Example</title>
+    	
+    <style>
+        /* Embedded CSS starts here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 98%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+        
+        #hidden-paragraph {
+            display: none;
+        }
+        
+        ol.custom-list {
+            list-style-type: none;
+            counter-reset: list-counter;
+        }
+
+        ol.custom-list li:before {
+            content: "(" counter(list-counter, lower-alpha) ") ";
+            counter-increment: list-counter;
+        }
+        
+        .spaced-button {
+          margin-right: 0.5em; /* Adjust the spacing here */
+          padding: 0.5em 2em; /* Adjust button size according to your preference */
+         }
+         
+         .margin-button {
+         	margin-top: 1em;
+             padding: 0.5em 2em;
+         }
+         
+         .spaced-paragraph {
+         	margin-top: 1em;
+         }
+    
+        body h5 {
+           margin-top: 0.75em;
+           margin-bottom: 0.2em; /* Adjust the margin-bottom to reduce distance between paragraphs */
+        }
+        h5 + ol {
+           margin-top: 0; /* Set the top margin of ul to 0 */
+        }
+
+        
+        p {
+           margin-top: 0.3em;
+           margin-bottom: 0.3em; /* Adjust the margin-bottom to reduce distance between paragraphs */
+        }
+        
+        img {
+        	vertical-align: top;
+             max-width: 300px;
+             max-height: 250px;
+             width: auto;
+             height: auto;
+        }
+
+
+        
+        /* Embedded CSS ends here */
+    </style>
+    
+</head>
+
+<body>
+	<div class="container">
+        <div class="header">
+            <h4>Quiz SANA 2015 Key Generator</h4>
+        </div>
+        <p>This script generates a secure Response String based on a Response String</p>
+        <h4>Secure Response String</h4>
+        <p id="SecureResponseStringId">Secure Response String</p>
+
+        <p class="spaced-paragraph">Your next Action: copy SecureResponseString into Script Quiz_SANA2015.html to variable SecureResponse</p>
+    </div>
+
+    <script>
+/*
+        Questions Images
+        Question 9 :   https://iili.io/JFLGztp.jpg
+        Question 10 : https://iili.io/JFLMc11.jpg
+        Question 11 : https://iili.io/JFLMiE7.jpg
+        Question 12 : https://iili.io/JFLVxCN.jpg
+        Question 13 : https://iili.io/JFLWhlt.jpg
+        Question 14 : https://iili.io/JFLWy0P.jpg
+        Question 15 : https://iili.io/JFLXKzv.jpg
+        Question 16 : https://iili.io/JFLXumG.jpg
+        Question 17 : https://iili.io/JFLXNEB.jpg
+               
+*/
+
+      // Codex Generation which is 3 times longer than number of questions
+      var SecureResponseString = document.getElementById("SecureResponseStringId");
+      var Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var Codex = "";
+      var NbrQuestions = 100;    // Codex is 300 Letters from A to Z
+      var LetterIdx = 0;
+	    
+      for(let i = 0; i < (NbrQuestions * 3); i++){
+        LetterIdx = i % (Alphabet.length);   // With modulo 26, LetterIdx goes from 0 to 25
+        Codex = Codex + Alphabet.charAt(LetterIdx);   // Codex: "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPRQ"
+      };
+      //debug.textContent = "Codex: " + Codex;
+
+      // Response Original (this block must be deleted for production)
+      var ResponseOriginal = "ABCCBAACBCABBABCBAABBAAACCABBAACCABBCABAACAABABBCBBAABACBBAACCABACBABAABBAABBAACCABBBCCACBAACABAAABC";
+
+      // Generate Response Code based on ResponseOriginal and Codex
+      var ResponseIdx = {A:0,B:1,C:2};
+      var ResponseCode = "";
+      var QuestionIdx = 0;
+      var ResponseLetter = "";
+      var CodexIdx = 0;
+
+      for (let i = 0; i < ResponseOriginal.length; i++){
+        ResponseLetter = ResponseOriginal.charAt(i); // A, B, C, C, ...
+        CodexIdx = i * 3;  // CodexIdx: 0,3,6,9,12,15
+        ResponseCode = ResponseCode + Codex.charAt(CodexIdx + ResponseIdx[ResponseLetter]); // ResponseCode: "AEIL..."
+      };
+
+      SecureResponseString.textContent = ResponseCode; // Copy console log string and paste to variable ResponseSecure
+
+
+    </script>
+</body>
+
+</html>
